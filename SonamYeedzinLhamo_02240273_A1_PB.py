@@ -45,7 +45,13 @@ def rock_paper_scissors_game():
             print("You win!")
         else:
             print("You lose!")
-
+            
+# Ask the player if they want to continue the game or not
+            play_again = input("Would you like to play again? (y/n): ")
+            if play_again != 'y': 
+                print("Thanks for playing")
+                
+# To play this
 def main():
     while True:
         print("\nSelect a function (1-3):")
@@ -67,5 +73,6 @@ def main():
         except ValueError:
             print("Please enter a valid number.")
 
+                
 if __name__ == "__main__":
     main()
